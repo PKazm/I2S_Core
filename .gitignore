@@ -1,8 +1,12 @@
-I2S_Core*/*
+I2S_Core.*/
 !/I2S_Core.srcs/
 
 Vitis/*
-!/Vitis/I2S_Core_Test_I2C/src/
+!/Vitis/I2S_Core_Test_I2C
+/Vitis/I2S_Core_Test_I2C/*
+!/Vitis/I2S_Core_Test_I2C/src
+/Vitis/I2S_Core_Test_I2C/src/*
+!/Vitis/I2S_Core_Test_I2C/src/main.c
 
 EXTRA_FILES/*
 

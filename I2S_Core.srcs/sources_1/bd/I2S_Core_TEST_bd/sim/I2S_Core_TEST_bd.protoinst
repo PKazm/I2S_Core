@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"I2S_Core_TEST_bd": {
+			"proto_instances": {
+			}
+		}
+	}
+}
