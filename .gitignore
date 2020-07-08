@@ -9,6 +9,7 @@ Vitis/*
 !/Vitis/I2S_Core_Test_I2C/src/main.c
 
 EXTRA_FILES/*
+!/EXTRA_FILES/I2C_Core_Test_bd.pdf
 
 I2C_Transmitter_tb_behav.wcfg
 I2S_Core.xpr
