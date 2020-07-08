@@ -1,0 +1,14 @@
+I2S_Core*/*
+!/I2S_Core.srcs/
+
+Vitis/*
+!/Vitis/I2S_Core_Test_I2C/src/
+
+EXTRA_FILES/*
+
+I2C_Transmitter_tb_behav.wcfg
+I2S_Core.xpr
+I2S_Core_TEST_bd_wrapper.bit
+I2S_Core_TEST_bd_wrapper.xsa
+I2S_Receiver_tb_behav.wcfg
+I2S_Transceiver_tb_behav.wcfg
