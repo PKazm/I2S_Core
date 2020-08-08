@@ -1,7 +1,7 @@
 //Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-//Date        : Tue Jul  7 15:27:12 2020
+//Date        : Tue Aug  4 03:58:48 2020
 //Host        : Phoenix136DESKY running 64-bit major release  (build 9200)
 //Command     : generate_target I2S_Core_TEST_bd.bd
 //Design      : I2S_Core_TEST_bd
@@ -36,7 +36,7 @@ module I2S_Core_TEST_bd
   inout ac_scl;
   inout ac_sda;
   output [7:0]jc;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.RESET_BTN RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.RESET_BTN, INSERT_VIP 0, POLARITY ACTIVE_LOW" *) input reset_btn;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.RESET_BTN RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.RESET_BTN, INSERT_VIP 0, POLARITY ACTIVE_HIGH" *) input reset_btn;
   input [3:0]sw;
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.SYSCLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.SYSCLK, CLK_DOMAIN I2S_Core_TEST_bd_sysclk, FREQ_HZ 125000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.000" *) input sysclk;
   output test_scl;

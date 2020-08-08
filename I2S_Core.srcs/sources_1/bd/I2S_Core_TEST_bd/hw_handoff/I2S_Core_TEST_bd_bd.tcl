@@ -176,6 +176,9 @@ proc create_root_design { parentCell } {
   set ac_sda [ create_bd_port -dir IO ac_sda ]
   set jc [ create_bd_port -dir O -from 7 -to 0 jc ]
   set reset_btn [ create_bd_port -dir I -type rst reset_btn ]
+  set_property -dict [ list \
+   CONFIG.POLARITY {ACTIVE_HIGH} \
+ ] $reset_btn
   set sw [ create_bd_port -dir I -from 3 -to 0 sw ]
   set sysclk [ create_bd_port -dir I -type clk -freq_hz 125000000 sysclk ]
   set test_scl [ create_bd_port -dir O test_scl ]
@@ -203,6 +206,10 @@ proc create_root_design { parentCell } {
      return 1
    }
   
+  set_property -dict [ list \
+   CONFIG.POLARITY {ACTIVE_HIGH} \
+ ] [get_bd_pins /I2S_Core_TEST_0/rst]
+
   # Create instance: clk_wiz_0, and set properties
   set clk_wiz_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0 ]
   set_property -dict [ list \

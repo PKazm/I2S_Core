@@ -1,0 +1,66 @@
+{
+	"version": "1.0",
+	"modules": {
+		"I2S_AXI_test": {
+			"proto_instances": {
+				"/I2S_Core_AXI_0/S_AXI4": {
+					"interface": "xilinx.com:interface:aximm:1.0",
+					"ports": {
+						"ACLK": { "actual": "clk"},
+						"ARADDR": { "actual": "S_AXI4_ARADDR"},
+						"ARESET": { "actual": "rst"},
+						"ARID": { "actual": "S_AXI4_ARID"},
+						"ARPROT": { "actual": "S_AXI4_ARPROT"},
+						"ARREADY": { "actual": "S_AXI4_ARREADY"},
+						"ARVALID": { "actual": "S_AXI4_ARVALID"},
+						"AWADDR": { "actual": "S_AXI4_AWADDR"},
+						"AWID": { "actual": "S_AXI4_AWID"},
+						"AWPROT": { "actual": "S_AXI4_AWPROT"},
+						"AWREADY": { "actual": "S_AXI4_AWREADY"},
+						"AWVALID": { "actual": "S_AXI4_AWVALID"},
+						"BID": { "actual": "S_AXI4_BID"},
+						"BREADY": { "actual": "S_AXI4_BREADY"},
+						"BRESP": { "actual": "S_AXI4_BRESP"},
+						"BVALID": { "actual": "S_AXI4_BVALID"},
+						"RDATA": { "actual": "S_AXI4_RDATA"},
+						"RID": { "actual": "S_AXI4_RID"},
+						"RREADY": { "actual": "S_AXI4_RREADY"},
+						"RRESP": { "actual": "S_AXI4_RRESP"},
+						"RVALID": { "actual": "S_AXI4_RVALID"},
+						"WDATA": { "actual": "S_AXI4_WDATA"},
+						"WID": { "actual": "S_AXI4_WID"},
+						"WREADY": { "actual": "S_AXI4_WREADY"},
+						"WSTRB": { "actual": "S_AXI4_WSTRB"},
+						"WVALID": { "actual": "S_AXI4_WVALID"}
+					}
+				},
+				"/axi_vip_0/M_AXI": {
+					"interface": "xilinx.com:interface:aximm:1.0",
+					"ports": {
+						"ACLK": { "actual": "aclk"},
+						"ARADDR": { "actual": "m_axi_araddr"},
+						"ARESETN": { "actual": "aresetn"},
+						"ARPROT": { "actual": "m_axi_arprot"},
+						"ARREADY": { "actual": "m_axi_arready"},
+						"ARVALID": { "actual": "m_axi_arvalid"},
+						"AWADDR": { "actual": "m_axi_awaddr"},
+						"AWPROT": { "actual": "m_axi_awprot"},
+						"AWREADY": { "actual": "m_axi_awready"},
+						"AWVALID": { "actual": "m_axi_awvalid"},
+						"BREADY": { "actual": "m_axi_bready"},
+						"BRESP": { "actual": "m_axi_bresp"},
+						"BVALID": { "actual": "m_axi_bvalid"},
+						"RDATA": { "actual": "m_axi_rdata"},
+						"RREADY": { "actual": "m_axi_rready"},
+						"RRESP": { "actual": "m_axi_rresp"},
+						"RVALID": { "actual": "m_axi_rvalid"},
+						"WDATA": { "actual": "m_axi_wdata"},
+						"WREADY": { "actual": "m_axi_wready"},
+						"WSTRB": { "actual": "m_axi_wstrb"},
+						"WVALID": { "actual": "m_axi_wvalid"}
+					}
+				}
+			}
+		}
+	}
+}

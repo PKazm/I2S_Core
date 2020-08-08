@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xB556E6AF7FC9B015",
+      "boundary_crc": "0xB556E6AF7E914099",
       "device": "xc7z010clg400-1",
       "name": "I2S_Core_TEST_bd",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
@@ -90,8 +90,7 @@
             "value_src": "default"
           },
           "POLARITY": {
-            "value": "ACTIVE_LOW",
-            "value_src": "default"
+            "value": "ACTIVE_HIGH"
           }
         }
       },
@@ -404,7 +403,12 @@
           },
           "rst": {
             "type": "rst",
-            "direction": "I"
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_HIGH"
+              }
+            }
           },
           "mclk": {
             "direction": "I",

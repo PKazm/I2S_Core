@@ -1,0 +1,43 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-365,-193",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port clk -pg 1 -lvl 0 -x -40 -y 0 -defaultsOSRD
+preplace port rst -pg 1 -lvl 0 -x -40 -y 180 -defaultsOSRD
+preplace port mclk -pg 1 -lvl 0 -x -40 -y 200 -defaultsOSRD
+preplace port bclk_i -pg 1 -lvl 0 -x -40 -y 220 -defaultsOSRD
+preplace port i2s_tx_lrc_i -pg 1 -lvl 0 -x -40 -y 240 -defaultsOSRD
+preplace port i2s_rx_dat -pg 1 -lvl 0 -x -40 -y 260 -defaultsOSRD
+preplace port i2s_rx_lrc_i -pg 1 -lvl 0 -x -40 -y 280 -defaultsOSRD
+preplace port audio_mclk -pg 1 -lvl 2 -x 530 -y 170 -defaultsOSRD
+preplace port bclk_o -pg 1 -lvl 2 -x 530 -y 190 -defaultsOSRD
+preplace port i2s_tx_dat -pg 1 -lvl 2 -x 530 -y 210 -defaultsOSRD
+preplace port i2s_tx_lrc_o -pg 1 -lvl 2 -x 530 -y 230 -defaultsOSRD
+preplace port i2s_rx_lrc_o -pg 1 -lvl 2 -x 530 -y 250 -defaultsOSRD
+preplace port rstn -pg 1 -lvl 0 -x -40 -y 20 -defaultsOSRD
+preplace port interrupt -pg 1 -lvl 2 -x 530 -y 270 -defaultsOSRD
+preplace inst axi_vip_0 -pg 1 -lvl 1 -x 360 -y 10 -defaultsOSRD
+preplace inst I2S_Core_AXI_0 -pg 1 -lvl 1 -x 360 -y 210 -defaultsOSRD
+preplace netloc clk_1 1 0 1 -20 0n
+preplace netloc rst_1 1 0 1 N 180
+preplace netloc mclk_1 1 0 1 N 200
+preplace netloc bclk_i_1 1 0 1 N 220
+preplace netloc i2s_tx_lrc_i_1 1 0 1 N 240
+preplace netloc i2s_rx_dat_1 1 0 1 N 260
+preplace netloc i2s_rx_lrc_i_1 1 0 1 N 280
+preplace netloc I2S_Core_AXI_0_audio_mclk 1 1 1 490 160n
+preplace netloc I2S_Core_AXI_0_bclk_o 1 1 1 490 180n
+preplace netloc I2S_Core_AXI_0_i2s_tx_dat 1 1 1 490 200n
+preplace netloc I2S_Core_AXI_0_i2s_tx_lrc_o 1 1 1 490 220n
+preplace netloc I2S_Core_AXI_0_i2s_rx_lrc_o 1 1 1 490 240n
+preplace netloc rstn_1 1 0 1 N 20
+preplace netloc I2S_Core_AXI_0_interrupt 1 1 1 490 260n
+preplace netloc axi_vip_0_M_AXI 1 0 2 -10 80 490
+levelinfo -pg 1 -40 360 530
+pagesize -pg 1 -db -bbox -sgen -170 -160 660 340
+"
+}
+0
