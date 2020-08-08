@@ -447,14 +447,14 @@ module I2S_Core_AXI
 
     //=========================================================================
     // Control Register
-    //  0  : Enable == 1 (default 0)
-    //  1  : Mute == 1 (default 1)
+    //  0  : Enable == 1 (default 1)
+    //  1  : Mute == 1 (default 0)
     //  2  : Unused
     // 3-7 : Unused
     //=========================================================================
     always @(posedge clk) begin : p_AXI_control_register
         if(rst == 1) begin
-            control_reg <= 8'b0000_0010;
+            control_reg <= 8'b0000_0001;
         end
         else begin
             if(AW_IID == W_IID && B_IID != AW_IID && AWADDR_reg == CTRL_REG_ADR) begin
@@ -466,8 +466,8 @@ module I2S_Core_AXI
 
     //=========================================================================
     // Status Register
-    //  0  : Enable == 1 (default 0)
-    //  1  : Mute == 1 (default 1)
+    //  0  : Enable == 1 (default 1)
+    //  1  : Mute == 1 (default 0)
     // 2-3 : Unused
     //  4  : Data TX Left interrupt high (indicates data read into I2C transmitter)
     //  5  : Data TX Right interrupt high (indicates data read into I2C transmitter)
@@ -500,8 +500,8 @@ module I2S_Core_AXI
             
             end
 
-            status_reg[0] <= 0;
-            status_reg[1] <= 0;
+            status_reg[0] <= control_reg[0];
+            status_reg[1] <= control_reg[1];
             status_reg[2] <= 0;
             status_reg[3] <= 0;
 
